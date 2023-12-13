@@ -21,28 +21,28 @@ function loadProduct(product) {
                     <div id="product-imgs" class="justify-content-start">
                         <div class="overflow-hidden">
                             <div id="img-showcase" class="d-flex w-100">
-                                <img src="${product.productImage}" alt="Shoe image">
+                                <img src="${product.productImage}" alt="${product.productName}">
                             </div>
                         </div>
                         <div id="img-select">
                             <div class="img-item">
                                 <a href="#" data-id="1">
-                                    <img src="./image/Products/NikeAirForcePreto-2.jpg" alt="Shoe image">
+                                    <img src="./image/Products/NikeAirForcePreto-2.jpg" alt="${product.productName}">
                                 </a>
                             </div>
                             <div class="img-item">
                                 <a href="#" data-id="2">
-                                    <img src="./image/Products/NikeAirForcePreto-2.jpg" alt="Shoe image">
+                                    <img src="./image/Products/NikeAirForcePreto-2.jpg" alt="${product.productName}">
                                 </a>
                             </div>
                             <div class="img-item">
                                 <a href="#" data-id="3">
-                                    <img src="./image/Products/NikeAirForcePreto-2.jpg" alt="Shoe image">
+                                    <img src="./image/Products/NikeAirForcePreto-2.jpg" alt="${product.productName}">
                                 </a>
                             </div>
                             <div class="img-item">
                                 <a href="#" data-id="4">
-                                    <img src="./image/Products/NikeAirForcePreto-2.jpg" alt="Shoe image">
+                                    <img src="./image/Products/NikeAirForcePreto-2.jpg" alt="${product.productName}">
                                 </a>
                             </div>
                         </div>

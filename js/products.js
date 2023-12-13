@@ -39,7 +39,7 @@ function loadBrandProducts (brandProducts, gridBrandProducts)
         // Set value to a "html"
         let html = `<div class="product-card col-md-6 col-lg-4 col-xl-3 p-2">
                         <div class="collection-img position-relative">
-                            <img src="${product.productImage}" id="${product.productCode}" class="w-100">
+                            <img src="${product.productImage}" id="${product.productCode}" alt="${product.productName}" class="w-100">
                         </div>
                         <div class="text-center">
                             <div class="rating mt-3">

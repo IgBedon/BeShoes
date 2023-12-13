@@ -12,7 +12,7 @@ function loadCartProductsLeft (cartList, leftCart){
                         <div class="row px-3">
                             <!-- cart images div -->
                             <div id="product-img" class="bg-light mx-auto mb-4 d-flex justify-content-center align-items-center">
-                                <img src="${product.productImage}" class="img-fluid" alt="cart img">
+                                <img src="${product.productImage}" class="img-fluid" alt="${product.productName}">
                             </div>
 
                             <!-- cart product details -->
@@ -78,23 +78,6 @@ function loadCartProductsRight (rightCart){
                         </div>
                         <button id="checkout-btn" class="btn btn-primary text-uppercase">Checkout</button>
                     </div>
-
-                    <div class="mt-3 shadow p-3 bg-white rounded">
-                        <form class="pt-4">
-                            <div class="form-box form-control">
-                                <p class="text-start fs-5 fw-bold text-muted">Enter your Name:</p>
-                                <div class="input-group mb-3 mt-3">
-                                    <input id="name" type="text" class="form-control" placeholder="Enter your full name, please...">
-                                </div>
-                            </div>
-                            <div class="form-box form-control">
-                                <p class="text-start fs-5 fw-bold text-muted">Enter your address:</p>
-                                <div class="input-group mb-3 mt-3">
-                                    <input id="address" type="text" class="form-control" placeholder="Enter your address, please...">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                 </div>`
     rightCart.innerHTML += html;
 }
@@ -140,39 +123,12 @@ function deleteItem(cartList){
         }))
 }
 
-export function loadShop(cartList, requests){
-  
-    let id = requests.length
-     if (requests == null || requests == 0){id = 1}
-
-    let address = document.querySelector("input#address").value
-    let name = document.querySelector("input#name").value
-
-    let request = {
-        id: id,
-        name: name,
-        items: cartList,
-        address: address
-    }
-
-    requests.push(request)
-    localStorage.setItem("requests",JSON.stringify(requests))
-    localStorage.removeItem('cart')
-    localStorage.removeItem('Product ID')
-    alert("Your shop was finished!")
-    location.reload()
-}
 
 
 let cartList = JSON.parse(localStorage.getItem("cart"))
 let leftCart = document.querySelector('#left-cart')
 let rightCart = document.querySelector('#cart')
 
-
-let requests = JSON.parse(localStorage.getItem("requests"))
-if (requests == null ){
-    requests = []
-}
 
 // cartIndicator(listaCarrinhoDeCompras)
 // These methods are loading cart page
@@ -182,4 +138,4 @@ deleteItem(cartList)
 calculateTotalValue(cartList)
 
 let checkout_btn = document.querySelectorAll("#checkout-btn")
-checkout_btn.forEach(button => button.addEventListener("click", () => loadShop(cartList, requests)))
+checkout_btn.forEach(button => button.addEventListener("click", () => window.location.href = "form.html"))

@@ -220,7 +220,7 @@ footer a:hover {
 
 /* ============================= Home Page ====================================== */
 /* Header (Carousel) */
-#header {
+#header-div {
     padding-top: 20px;
 }
 
@@ -676,9 +676,7 @@ footer a:hover {
     color: white;
 }
 
-.form-address{
-    width: 100%;
-}
+
 
 @media (max-width: 900px) {
     #product-img{
@@ -724,6 +722,84 @@ footer a:hover {
         font-weight: 600;
     }
 }
+
+
+
+/* ============================= Form Page ====================================== */
+
+.form-address{
+    width: 100%;
+}
+
+.form-box-cart {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.input-cart::placeholder {
+    color: #cac9c9;
+}
+
+.input-cart:hover {
+    border: 1px var(--custom-red) solid;
+}
+
+.input-cart:focus {
+    box-shadow: none;
+    border: 1px var(--custom-red) solid;
+}
+
+.card-form-cart {
+    margin: 30px auto;
+    width: 70%;
+
+    @media (max-width: 600px) {
+        width: 90%;
+    }
+}
+
+.card-form {
+    padding: 20px 70px;
+
+    @media (max-width: 1100px) {
+        padding: 20px 20px;
+    }
+}
+
+.card-form-cart option{
+    color: #9c9fa1;
+}
+
+.buyer {
+    margin: 1.5%;
+    
+    @media (min-width: 1100px) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.btn-send {
+    background-color: var(--custom-red);
+    border: 1px solid var(--custom-red);
+    color: white;
+    width: 25%;
+    margin: auto;
+}
+
+.btn-send:hover {
+    background-color: var(--custom-red);
+    color: white;
+    opacity: 0.9;
+}
+
+#title-form-cart {
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+
+
 
 
 /* ============================= Static ADM Page ====================================== */

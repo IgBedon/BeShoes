@@ -13,7 +13,7 @@ function loadSpecialProducts (specialProducts, gridSpecial)
     // Set value to a "html"
     let html = `<div class="product-card col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="special-img position-relative overflow-hidden">
-                        <img src="${product.productImage}" id="${product.productCode}" class="w-100">
+                        <img src="${product.productImage}" id="${product.productCode}" alt="${product.productName}" class="w-100">
                         <span class="position-absolute d-flex align-items-center justify-content-center text-dark fs-4">
                             <i class="special-icon fa fa-heart"></i>
                         </span>
@@ -35,7 +35,7 @@ function loadPopularProducts (popularProducts, gridPopular)
     popularProducts.forEach(product => {
     // Set value to a "html"
     let html = `<div class="product-card d-flex align-items-start justify-content-start">
-                    <img alt="" id="${product.productCode}" class="img-fluid pe-3 w-25" src="${product.productImage}">
+                    <img alt="${product.productName}" id="${product.productCode}" class="img-fluid pe-3 w-25" src="${product.productImage}">
                     <div>
                         <p class="mb-0" id="${product.productCode}">${product.productName}</p>
                         <span>R$ ${product.price}</span>

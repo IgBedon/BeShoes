@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeShoes</title>
-    <link rel="shortcut icon" type="imagex/png" href="./image/Edited_Logo.png">
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
@@ -16,295 +15,293 @@
 </head>
 
 <body>
-    <div class="nav-div sticky-top">
-        <div>
-            <!-- Auxiliar NavBar -->
-            <nav id="aux-navbar" class="navbar navbar-expand-lg bg-dark border-bottom border-body align-items-center"
-                data-bs-theme="light">
-                <div class="container-fluid justify-content-between">
-                    <!-- Logo -->
-                    <h4 class="w-25 fs-5"></h4>
-                    <!-- Search -->
-                    <form id="form-nav" class="w-50" role="search">
-                        <div class="d-flex w-100 justify-content-center">
-                            <span class="input-group-text" id="search-icon-span">
-                                <button><i class="fa fa-search"></i></button></i>
-                            </span>
-                            <input id="aux-navbar-input" class="form-control me-2 w-75" type="search"
-                                placeholder="Search for a product" aria-label="Search">
-                        </div>
-                    </form>
-                    <button id="btn-icon" type="button" class="btn d-none">
-                        <i class="fa fa-user fs-4"></i>
-                    </button>
-                    <div id="aux-navbar-btns" class="navbar-expand w-25">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li><button class="btn btn-outline-light" type="submit">Sign In</button></li>
-                            <li><button class="btn btn-outline-light" type="submit">Sign Up</button></li>
-                        </ul>
+    <header class="nav-div sticky-top">
+        <!-- Auxiliar NavBar -->
+        <nav id="aux-navbar" class="navbar navbar-expand-lg bg-dark border-bottom border-body align-items-center"
+            data-bs-theme="light">
+            <div class="container-fluid justify-content-between">
+                <!-- Alinhamento -->
+                <h4 class="w-25 fs-5"></h4>
+                <!-- Search -->
+                <form id="form-nav" class="w-50" role="search">
+                    <div class="d-flex w-100 justify-content-center">
+                        <span class="input-group-text" id="search-icon-span">
+                            <button><i class="fa fa-search"></i></button></i>
+                        </span>
+                        <input id="aux-navbar-input" class="form-control me-2 w-75" type="search"
+                            placeholder="Search for a product" aria-label="Search">
                     </div>
+                </form>
+                <button id="btn-icon" type="button" class="btn d-none">
+                    <i class="fa fa-user fs-4"></i>
+                </button>
+                <div id="aux-navbar-btns" class="navbar-expand w-25">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li><button class="btn btn-outline-light" type="submit">Sign In</button></li>
+                        <li><button class="btn btn-outline-light" type="submit">Sign Up</button></li>
+                    </ul>
                 </div>
-            </nav>
-            <!-- End of Auxiliar NavBar-->
-        </div>
+            </div>
+        </nav>
+        <!-- End of Auxiliar NavBar-->
 
-        <div>
-            <!-- Main NavBar -->
-            <nav id="nav2" class="navbar navbar-expand-lg navbar-light bg-white order-lg-0 align-items-center">
-                <div class="container-fluid text-center">
-                    <a id="brand" class="navbar-brand" href="index.html">
-                        <img src="./image/Edited_Logo.png" alt="Logo Icon">
-                        <!-- <span class="text-uppercase fw-lighter ms-2">BeShoes</span>-->
-                    </a>
+        <!-- Main NavBar -->
+        <nav id="nav2" class="navbar navbar-expand-lg navbar-light bg-white order-lg-0 align-items-center">
+            <div class="container-fluid text-center">
+                <a id="brand" class="navbar-brand" href="index.html">
+                    <img src="./image/Edited_Logo.png" alt="Logo Icon">
+                    <!-- <span class="text-uppercase fw-lighter ms-2">BeShoes</span>-->
+                </a>
 
-                    <div id="nav-icons" class="order-lg-2 d-flex justify-content-center">
-                        <button type="button" class="btn position-relative mx-2">
-                            <i class="fa fa-shopping-cart fs-4"></i>
-                            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
-                        </button>
-                        <button type="button" class="btn position-relative mx-2">
-                            <i class="fa fa-heart fs-4"></i>
-                            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
-                        </button>
-                    </div>
-
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navMenu">
-                        <span class="navbar-toggler-icon"></span>
+                <div id="nav-icons" class="order-lg-2 d-flex justify-content-center">
+                    <button type="button" class="btn position-relative mx-2">
+                        <i class="fa fa-shopping-cart fs-4"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
                     </button>
-
-                    <div id="navMenu" class="collapse navbar-collapse order-lg-1">
-                        <ul class="navbar-nav mx-auto text-center align-items-center fs-6">
-                            <li class="nav-item px-4 py-2">
-                                <a class="nav-link text-uppercase text-dark" href="index.html">home</a>
-                            </li>
-                            <li class="nav-item px-4 py-2">
-                                <a class="nav-link text-uppercase text-dark" href="products.html">collection</a>
-                            </li>
-                            <li class="nav-item px-4 py-2">
-                                <a class="nav-link text-uppercase text-dark" href="contact-us.html">contact us</a>
-                            </li>
-                            <li class="nav-item px-4 py-2">
-                                <a class="nav-link text-uppercase text-dark" href="about-us.html">about us</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <button type="button" class="btn position-relative mx-2">
+                        <i class="fa fa-heart fs-4"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                    </button>
                 </div>
-            </nav>
-            <!--End of Main NavBar -->
-        </div>
-    </div>
 
-    <div class="adm-div">
-        <h1>Histórico de Pedidos</h1>
-        <table>
-            <tr>
-                <th>Número do Pedido</th>
-                <th>Data</th>
-                <th>Itens</th>
-                <th>Quantidade</th>
-                <th>Preço Unitário</th>
-                <th>Preço Total do item</th>
-                <th>Status</th>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>01</td>
-                <td>10/09/2023</td>
-                <td>Nike Air Force 1 - Shadow</td>
-                <td>2</td>
-                <td>R$ 200,00</td>
-                <td>R$ 400,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido com múltiplos itens -->
-            <tr>
-                <td rowspan="3">02</td> <!-- rowspan para cobrir três linhas -->
-                <td rowspan="3">11/09/2023</td>
-                <td>Nike Air Force 1 Shadow</td>
-                <td>1</td>
-                <td>R$ 200,00</td>
-                <td>R$ 200,00</td>
-                <td rowspan="3">Processando</td>
-            </tr>
-            <tr>
-                <td>Puma RS-X 3D - Black</td>
-                <td>2</td>
-                <td>R$ 300,00</td>
-                <td>R$ 600,00</td>
-            </tr>
-            <tr>
-                <td>Air Jordan Legacy 312 - Aquamarine</td>
-                <td>3</td>
-                <td>R$ 250,00</td>
-                <td>R$ 750,00</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>03</td>
-                <td>12/09/2023</td>
-                <td>Air Max 90 WTR - Orange</td>
-                <td>2</td>
-                <td>R$ 500,00</td>
-                <td>R$ 1000,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>04</td>
-                <td>13/09/2023</td>
-                <td>Nike Air Force 1 '07 - Black</td>
-                <td>1</td>
-                <td>R$ 350,00</td>
-                <td>R$ 350,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>05</td>
-                <td>14/09/2023</td>
-                <td>Jordan Stay Loyal 2</td>
-                <td>2</td>
-                <td>R$ 400,00</td>
-                <td>R$ 800,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>06</td>
-                <td>15/09/2023</td>
-                <td>Jordan Jumpman Two Trey</td>
-                <td>2</td>
-                <td>R$ 250,00</td>
-                <td>R$ 500,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido com múltiplos itens -->
-            <tr>
-                <td rowspan="4">07</td> <!-- rowspan para cobrir três linhas -->
-                <td rowspan="4">16/09/2023</td>
-                <td>Vans Ultrarange Black Unissex</td>
-                <td>1</td>
-                <td>R$ 700,00</td>
-                <td>R$ 700,00</td>
-                <td rowspan="4">Processando</td>
-            </tr>
-            <tr>
-                <td>Adidas Stan Smith Monega</td>
-                <td>2</td>
-                <td>R$ 300,00</td>
-                <td>R$ 600,00</td>
-            </tr>
-            <tr>
-                <td>Vans Old School Black</td>
-                <td>3</td>
-                <td>R$ 250,00</td>
-                <td>R$ 750,00</td>
-            </tr>
-            <tr>
-                <td>Adidas Oznova Cinza</td>
-                <td>1</td>
-                <td>R$ 300,00</td>
-                <td>R$ 300,00</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>08</td>
-                <td>17/09/2023</td>
-                <td>Nike Court Borough Low</td>
-                <td>2</td>
-                <td>R$ 250,00</td>
-                <td>R$ 500,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>09</td>
-                <td>20/09/2023</td>
-                <td>Nike Air Force 1 - Shadow</td>
-                <td>2</td>
-                <td>R$ 200,00</td>
-                <td>R$ 400,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>10</td>
-                <td>21/09/2023</td>
-                <td>Puma Suede Classic - Black</td>
-                <td>3</td>
-                <td>R$ 300,00</td>
-                <td>R$ 900,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>11</td>
-                <td>21/09/2023</td>
-                <td>Adidas Stan Smith Monega</td>
-                <td>2</td>
-                <td>R$ 200,00</td>
-                <td>R$ 400,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido com múltiplos itens -->
-            <tr>
-                <td rowspan="2">12</td> <!-- rowspan para cobrir três linhas -->
-                <td rowspan="2">11/09/2023</td>
-                <td>Nike Air Force 1 Shadow</td>
-                <td>1</td>
-                <td>R$ 200,00</td>
-                <td>R$ 200,00</td>
-                <td rowspan="2">Processando</td>
-            </tr>
-            <tr>
-                <td>Nike Court Borough Low</td>
-                <td>2</td>
-                <td>R$ 250,00</td>
-                <td>R$ 500,00</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>13</td>
-                <td>27/09/2023</td>
-                <td>Vans Ultrarange Black Unissex</td>
-                <td>1</td>
-                <td>R$ 300,00</td>
-                <td>R$ 300,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>14</td>
-                <td>28/09/2023</td>
-                <td>Nike Air Force 1 - Shadow</td>
-                <td>2</td>
-                <td>R$ 200,00</td>
-                <td>R$ 400,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>15</td>
-                <td>10/09/2023</td>
-                <td>Jordan Stay Loyal 2 </td>
-                <td>4</td>
-                <td>R$ 200,00</td>
-                <td>R$ 800,00</td>
-                <td>Enviado</td>
-            </tr>
-            <!-- Pedido de um único item -->
-            <tr>
-                <td>01</td>
-                <td>10/09/2023</td>
-                <td>Air Jordan Legacy 312 - Aquamarine</td>
-                <td>1</td>
-                <td>R$ 250,00</td>
-                <td>R$ 250,00</td>
-                <td>Enviado</td>
-            </tr>
-        </table>
-    </div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navMenu" class="collapse navbar-collapse order-lg-1">
+                    <ul class="navbar-nav mx-auto text-center align-items-center fs-6">
+                        <li class="nav-item px-4 py-2">
+                            <a class="nav-link text-uppercase text-dark" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item px-4 py-2">
+                            <a class="nav-link text-uppercase text-dark" href="products.html">collection</a>
+                        </li>
+                        <li class="nav-item px-4 py-2">
+                            <a class="nav-link text-uppercase text-dark" href="contact-us.html">contact us</a>
+                        </li>
+                        <li class="nav-item px-4 py-2">
+                            <a class="nav-link text-uppercase text-dark" href="about-us.html">about us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--End of Main NavBar -->
+    </header>
+
+    <main>
+        <section class="adm-div">
+            <h1>Histórico de Pedidos</h1>
+            <table>
+                <tr>
+                    <th>Número do Pedido</th>
+                    <th>Data</th>
+                    <th>Itens</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Preço Total do item</th>
+                    <th>Status</th>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>01</td>
+                    <td>10/09/2023</td>
+                    <td>Nike Air Force 1 - Shadow</td>
+                    <td>2</td>
+                    <td>R$ 200,00</td>
+                    <td>R$ 400,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido com múltiplos itens -->
+                <tr>
+                    <td rowspan="3">02</td> <!-- rowspan para cobrir três linhas -->
+                    <td rowspan="3">11/09/2023</td>
+                    <td>Nike Air Force 1 Shadow</td>
+                    <td>1</td>
+                    <td>R$ 200,00</td>
+                    <td>R$ 200,00</td>
+                    <td rowspan="3">Processando</td>
+                </tr>
+                <tr>
+                    <td>Puma RS-X 3D - Black</td>
+                    <td>2</td>
+                    <td>R$ 300,00</td>
+                    <td>R$ 600,00</td>
+                </tr>
+                <tr>
+                    <td>Air Jordan Legacy 312 - Aquamarine</td>
+                    <td>3</td>
+                    <td>R$ 250,00</td>
+                    <td>R$ 750,00</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>03</td>
+                    <td>12/09/2023</td>
+                    <td>Air Max 90 WTR - Orange</td>
+                    <td>2</td>
+                    <td>R$ 500,00</td>
+                    <td>R$ 1000,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>04</td>
+                    <td>13/09/2023</td>
+                    <td>Nike Air Force 1 '07 - Black</td>
+                    <td>1</td>
+                    <td>R$ 350,00</td>
+                    <td>R$ 350,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>05</td>
+                    <td>14/09/2023</td>
+                    <td>Jordan Stay Loyal 2</td>
+                    <td>2</td>
+                    <td>R$ 400,00</td>
+                    <td>R$ 800,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>06</td>
+                    <td>15/09/2023</td>
+                    <td>Jordan Jumpman Two Trey</td>
+                    <td>2</td>
+                    <td>R$ 250,00</td>
+                    <td>R$ 500,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido com múltiplos itens -->
+                <tr>
+                    <td rowspan="4">07</td> <!-- rowspan para cobrir três linhas -->
+                    <td rowspan="4">16/09/2023</td>
+                    <td>Vans Ultrarange Black Unissex</td>
+                    <td>1</td>
+                    <td>R$ 700,00</td>
+                    <td>R$ 700,00</td>
+                    <td rowspan="4">Processando</td>
+                </tr>
+                <tr>
+                    <td>Adidas Stan Smith Monega</td>
+                    <td>2</td>
+                    <td>R$ 300,00</td>
+                    <td>R$ 600,00</td>
+                </tr>
+                <tr>
+                    <td>Vans Old School Black</td>
+                    <td>3</td>
+                    <td>R$ 250,00</td>
+                    <td>R$ 750,00</td>
+                </tr>
+                <tr>
+                    <td>Adidas Oznova Cinza</td>
+                    <td>1</td>
+                    <td>R$ 300,00</td>
+                    <td>R$ 300,00</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>08</td>
+                    <td>17/09/2023</td>
+                    <td>Nike Court Borough Low</td>
+                    <td>2</td>
+                    <td>R$ 250,00</td>
+                    <td>R$ 500,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>09</td>
+                    <td>20/09/2023</td>
+                    <td>Nike Air Force 1 - Shadow</td>
+                    <td>2</td>
+                    <td>R$ 200,00</td>
+                    <td>R$ 400,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>10</td>
+                    <td>21/09/2023</td>
+                    <td>Puma Suede Classic - Black</td>
+                    <td>3</td>
+                    <td>R$ 300,00</td>
+                    <td>R$ 900,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>11</td>
+                    <td>21/09/2023</td>
+                    <td>Adidas Stan Smith Monega</td>
+                    <td>2</td>
+                    <td>R$ 200,00</td>
+                    <td>R$ 400,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido com múltiplos itens -->
+                <tr>
+                    <td rowspan="2">12</td> <!-- rowspan para cobrir três linhas -->
+                    <td rowspan="2">11/09/2023</td>
+                    <td>Nike Air Force 1 Shadow</td>
+                    <td>1</td>
+                    <td>R$ 200,00</td>
+                    <td>R$ 200,00</td>
+                    <td rowspan="2">Processando</td>
+                </tr>
+                <tr>
+                    <td>Nike Court Borough Low</td>
+                    <td>2</td>
+                    <td>R$ 250,00</td>
+                    <td>R$ 500,00</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>13</td>
+                    <td>27/09/2023</td>
+                    <td>Vans Ultrarange Black Unissex</td>
+                    <td>1</td>
+                    <td>R$ 300,00</td>
+                    <td>R$ 300,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>14</td>
+                    <td>28/09/2023</td>
+                    <td>Nike Air Force 1 - Shadow</td>
+                    <td>2</td>
+                    <td>R$ 200,00</td>
+                    <td>R$ 400,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>15</td>
+                    <td>10/09/2023</td>
+                    <td>Jordan Stay Loyal 2 </td>
+                    <td>4</td>
+                    <td>R$ 200,00</td>
+                    <td>R$ 800,00</td>
+                    <td>Enviado</td>
+                </tr>
+                <!-- Pedido de um único item -->
+                <tr>
+                    <td>01</td>
+                    <td>10/09/2023</td>
+                    <td>Air Jordan Legacy 312 - Aquamarine</td>
+                    <td>1</td>
+                    <td>R$ 250,00</td>
+                    <td>R$ 250,00</td>
+                    <td>Enviado</td>
+                </tr>
+            </table>
+        </section>
+    </main>
 
     <!-- footer -->
     <footer class="bg-dark py-5">
@@ -404,17 +401,10 @@
     </footer>
     <!-- end of footer -->
 
-
-
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <!-- Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <!-- Custom JS -->
-    <script src="/js/main.js"></script>
 </body>
 
 </html>
